@@ -1,7 +1,7 @@
 module.exports = {
 	extends: ['eslint-config-codely/typescript'],
 	rules: {
-		'no-console': 'warn'
+		'no-console': '0'
 	},
 	overrides: [
 		{

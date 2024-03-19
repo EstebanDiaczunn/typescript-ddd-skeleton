@@ -9,8 +9,6 @@ export class CourseCreator {
 	}
 
 	async run(id: string, name: string, duration: string): Promise<void> {
-		const course = new Course({ id, name, duration });
-
-		return this.repository.save(course);
+		await this.repository.save(new Course({ id, name, duration }));
 	}
 }
